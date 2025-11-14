@@ -1,0 +1,49 @@
+/* Note: Clash Display font should be added separately via @font-face or CDN */
+/* For now, using system sans-serif as fallback */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-black;
+  }
+  
+  body {
+    @apply bg-black text-white font-clash antialiased;
+    background-color: #101010;
+    color: #F1F1F1;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Clash Display', system-ui, -apple-system, sans-serif;
+  }
+}
+
+@layer utilities {
+  .text-teal {
+    color: #069494;
+  }
+  
+  .text-brown {
+    color: #4C2A20;
+  }
+  
+  .bg-teal {
+    background-color: #069494;
+  }
+  
+  .bg-brown {
+    background-color: #4C2A20;
+  }
+  
+  .border-teal {
+    border-color: #069494;
+  }
+  
+  .border-brown {
+    border-color: #4C2A20;
+  }
+}
+
